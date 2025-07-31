@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Marketing Agency</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#FFD700',
+                        secondary: '#1F1F1F',
+                        accent: '#2A2A2A'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-secondary text-gray-100">
+    <!-- Navigation -->
+    <nav class="bg-accent py-4 fixed w-full z-50">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <a href="/" class="flex items-center">
+                <img src="LOGO.jpg" alt="Company Logo" class="h-12">
+            </a>
+            <div class="hidden md:flex space-x-8">
+                <a href="/" class="hover:text-primary transition">Home</a>
+                <a href="services.html" class="hover:text-primary transition">Services</a>
+                <a href="portfolio.html" class="hover:text-primary transition">Portfolio</a>
+                <a href="about.html" class="hover:text-primary transition">About</a>
+                <a href="contact.html" class="hover:text-primary transition">Contact</a>
+            </div>
+            <button class="md:hidden" id="mobile-menu-button">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Contact Header -->
+    <section class="pt-32 pb-20 bg-gradient-to-b from-accent to-secondary">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-5xl font-bold mb-6">Get in Touch</h1>
+            <p class="text-xl text-gray-300 max-w-3xl mx-auto">Have a project in mind? Let's discuss how we can help you achieve your goals.</p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Contact Form -->
+                <div class="bg-accent p-8 rounded-lg">
+                    <h2 class="text-3xl font-bold mb-6">Send Us a Message</h2>
+                    <form id="contact-form" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium mb-2">Your Name</label>
+                            <input type="text" id="name" name="name" required
+                                class="w-full px-4 py-2 rounded-lg bg-secondary border border-gray-600 focus:outline-none focus:border-primary text-gray-100">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium mb-2">Email Address</label>
+                            <input type="email" id="email" name="email" required
+                                class="w-full px-4 py-2 rounded-lg bg-secondary border border-gray-600 focus:outline-none focus:border-primary text-gray-100">
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-sm font-medium mb-2">Phone Number</label>
+                            <input type="tel" id="phone" name="phone"
+                                class="w-full px-4 py-2 rounded-lg bg-secondary border border-gray-600 focus:outline-none focus:border-primary text-gray-100">
+                        </div>
+                        <div>
+                            <label for="subject" class="block text-sm font-medium mb-2">Subject</label>
+                            <input type="text" id="subject" name="subject" required
+                                class="w-full px-4 py-2 rounded-lg bg-secondary border border-gray-600 focus:outline-none focus:border-primary text-gray-100">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium mb-2">Your Message</label>
+                            <textarea id="message" name="message" rows="6" required
+                                class="w-full px-4 py-2 rounded-lg bg-secondary border border-gray-600 focus:outline-none focus:border-primary text-gray-100"></textarea>
+                        </div>
+                        <button type="submit"
+                            class="w-full bg-primary text-secondary px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400 transition">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div>
+                    <h2 class="text-3xl font-bold mb-6">Contact Information</h2>
+                    <div class="space-y-8">
+                        <div>
+                            <h3 class="text-xl font-semibold mb-4">Office Address</h3>
+                            <p class="text-gray-300">123 Business Street<br>City, State 12345<br>United States</p>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-4">Contact Details</h3>
+                            <ul class="space-y-2 text-gray-300">
+                                <li class="flex items-center">
+                                    <span class="text-primary mr-2">✉</span>
+                                    <a href="mailto:info@company.com" class="hover:text-primary">info@company.com</a>
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="text-primary mr-2">📞</span>
+                                    <a href="tel:+11234567890" class="hover:text-primary">(123) 456-7890</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-4">Business Hours</h3>
+                            <ul class="space-y-2 text-gray-300">
+                                <li>Monday - Friday: 9:00 AM - 6:00 PM</li>
+                                <li>Saturday: 10:00 AM - 4:00 PM</li>
+                                <li>Sunday: Closed</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-4">Follow Us</h3>
+                            <div class="flex space-x-4">
+                                <a href="#" class="text-gray-300 hover:text-primary transition">
+                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="text-gray-300 hover:text-primary transition">
+                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="text-gray-300 hover:text-primary transition">
+                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z M2 9h4v12H2z M4 2a2 2 0 1 1-2 2 2 2 0 0 1 2-2z"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="text-gray-300 hover:text-primary transition">
+                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5.17 6.83c.11-.25.17-.52.17-.83 0-1.11-.89-2-2-2-.31 0-.58.06-.83.17L12 8l-2.34-2.34C9.42 5.55 9.15 5.5 8.83 5.5c-1.11 0-2 .89-2 2 0 .31.06.58.17.83L9.17 12l-2.17 2.17c-.11.25-.17.52-.17.83 0 1.11.89 2 2 2 .31 0 .58-.06.83-.17L12 14l2.34 2.34c.25.11.52.17.83.17 1.11 0 2-.89 2-2 0-.31-.06-.58-.17-.83L14.83 12l2.34-2.34z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Google Map -->
+                    <div class="mt-8">
+                        <h3 class="text-xl font-semibold mb-4">Location</h3>
+                        <div class="w-full h-64 bg-accent rounded-lg overflow-hidden">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.30596073366!2d-74.25987368715491!3d40.69714941932609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1644286590170!5m2!1sen!2s"
+                                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <img src="LOGO.jpg" alt="Company Logo" class="h-12 mb-4">
+                    <p class="text-gray-300">Your trusted partner for digital growth and innovation.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/" class="text-gray-300 hover:text-primary">Home</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-primary">Services</a></li>
+                        <li><a href="portfolio.html" class="text-gray-300 hover:text-primary">Portfolio</a></li>
+                        <li><a href="about.html" class="text-gray-300 hover:text-primary">About</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-primary">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="services.html" class="text-gray-300 hover:text-primary">SEO Optimization</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-primary">Digital Marketing</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-primary">Business Automation</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-primary">AI Solutions</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-primary">Website Development</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Contact</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>123 Business Street</li>
+                        <li>City, State 12345</li>
+                        <li>Phone: (123) 456-7890</li>
+                        <li>Email: info@company.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-300">
+                <p>&copy; 2024 Your Company. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.querySelector('.md\\:flex');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Form submission handling
+        const contactForm = document.getElementById('contact-form');
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            // Add your form submission logic here
+            alert('Thank you for your message! We will get back to you soon.');
+            contactForm.reset();
+        });
+    </script>
+</body>
+</html>

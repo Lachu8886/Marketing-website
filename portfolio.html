@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Portfolio - Marketing Agency</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#FFD700',
+                        secondary: '#1F1F1F',
+                        accent: '#2A2A2A'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-secondary text-gray-100">
+    <!-- Navigation -->
+    <nav class="bg-accent py-4 fixed w-full z-50">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <a href="/" class="flex items-center">
+                <img src="LOGO.jpg" alt="Company Logo" class="h-12">
+            </a>
+            <div class="hidden md:flex space-x-8">
+                <a href="/" class="hover:text-primary transition">Home</a>
+                <a href="services.html" class="hover:text-primary transition">Services</a>
+                <a href="portfolio.html" class="hover:text-primary transition">Portfolio</a>
+                <a href="about.html" class="hover:text-primary transition">About</a>
+                <a href="contact.html" class="hover:text-primary transition">Contact</a>
+            </div>
+            <button class="md:hidden" id="mobile-menu-button">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Portfolio Header -->
+    <section class="pt-32 pb-20 bg-gradient-to-b from-accent to-secondary">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-5xl font-bold mb-6">Our Portfolio</h1>
+            <p class="text-xl text-gray-300 max-w-3xl mx-auto">Explore our successful projects and see how we've helped businesses achieve their digital goals.</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Filter -->
+    <section class="py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <button class="px-6 py-2 rounded-full bg-accent hover:bg-primary hover:text-secondary transition filter-btn active" data-filter="all">All</button>
+                <button class="px-6 py-2 rounded-full bg-accent hover:bg-primary hover:text-secondary transition filter-btn" data-filter="seo">SEO</button>
+                <button class="px-6 py-2 rounded-full bg-accent hover:bg-primary hover:text-secondary transition filter-btn" data-filter="marketing">Marketing</button>
+                <button class="px-6 py-2 rounded-full bg-accent hover:bg-primary hover:text-secondary transition filter-btn" data-filter="automation">Automation</button>
+                <button class="px-6 py-2 rounded-full bg-accent hover:bg-primary hover:text-secondary transition filter-btn" data-filter="ai">AI Solutions</button>
+                <button class="px-6 py-2 rounded-full bg-accent hover:bg-primary hover:text-secondary transition filter-btn" data-filter="web">Web Development</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="pb-20">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="portfolio-item" data-category="web">
+                    <div class="bg-accent rounded-lg overflow-hidden group">
+                        <img src="1.jpg" alt="E-commerce Website" class="w-full h-64 object-cover transition-transform group-hover:scale-110">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold mb-2">E-commerce Platform</h3>
+                            <p class="text-gray-300 mb-4">Custom e-commerce solution with advanced features and seamless user experience.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-secondary rounded-full text-sm">Web Development</span>
+                                <span class="px-3 py-1 bg-secondary rounded-full text-sm">UI/UX</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="portfolio-item" data-category="seo">
+                    <div class="bg-accent rounded-lg overflow-hidden group">
+                        <img src="2.jpg" alt="SEO Campaign" class="w-full h-64 object-cover transition-transform group-hover:scale-110">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold mb-2">SEO Optimization Campaign</h3>
+                            <p class="text-gray-300 mb-4">Increased organic traffic by 200% through strategic SEO optimization.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-secondary rounded-full text-sm">SEO</span>
+                                <span class="px-3 py-1 bg-secondary rounded-full text-sm">Content Strategy</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="portfolio-item" data-category="marketing">
+                    <div class="bg-accent rounded-lg overflow-hidden group">
+                        <img src="3.jpg" alt="Digital Marketing" class="w-full h-64 object-cover transition-transform group-hover:scale-110">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold mb-2">Digital Marketing Campaign</h3>
+                            <p class="text-gray-300 mb-4">Comprehensive digital marketing strategy that doubled conversion rates.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-secondary rounded-full text-sm">Digital Marketing</span>
+                                <span class="px-3 py-1 bg-secondary rounded-full text-sm">Social Media</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="portfolio-item" data-category="automation">
+                    <div class="bg-accent rounded-lg overflow-hidden group">
+                        <img src="4.jpg" alt="Business Automation" class="w-full h-64 object-cover transition-transform group-hover:scale-110">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold mb-2">Workflow Automation</h3>
+                            <p class="text-gray-300 mb-4">Automated business processes resulting in 50% efficiency improvement.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-secondary rounded-full text-sm">Automation</span>
+                                <span class="px-3 py-1 bg-secondary rounded-full text-sm">Process Optimization</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="portfolio-item" data-category="ai">
+                    <div class="bg-accent rounded-lg overflow-hidden group">
+                        <img src="5.jpg" alt="AI Implementation" class="w-full h-64 object-cover transition-transform group-hover:scale-110">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold mb-2">AI-Powered Analytics</h3>
+                            <p class="text-gray-300 mb-4">Implemented predictive analytics solution for data-driven decision making.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-secondary rounded-full text-sm">AI</span>
+                                <span class="px-3 py-1 bg-secondary rounded-full text-sm">Analytics</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="portfolio-item" data-category="web">
+                    <div class="bg-accent rounded-lg overflow-hidden group">
+                        <img src="6.jpg" alt="Web Application" class="w-full h-64 object-cover transition-transform group-hover:scale-110">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold mb-2">SaaS Platform</h3>
+                            <p class="text-gray-300 mb-4">Developed a scalable SaaS solution with modern technology stack.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-secondary rounded-full text-sm">Web Development</span>
+                                <span class="px-3 py-1 bg-secondary rounded-full text-sm">SaaS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-accent">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-8">Ready to Start Your Project?</h2>
+            <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">Let's create something amazing together.</p>
+            <a href="contact.html" class="bg-primary text-secondary px-8 py-3 rounded-full font-semibold hover:bg-yellow-400 transition inline-block">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <img src="LOGO.jpg" alt="Company Logo" class="h-12 mb-4">
+                    <p class="text-gray-300">Your trusted partner for digital growth and innovation.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/" class="text-gray-300 hover:text-primary">Home</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-primary">Services</a></li>
+                        <li><a href="portfolio.html" class="text-gray-300 hover:text-primary">Portfolio</a></li>
+                        <li><a href="about.html" class="text-gray-300 hover:text-primary">About</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-primary">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="services.html" class="text-gray-300 hover:text-primary">SEO Optimization</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-primary">Digital Marketing</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-primary">Business Automation</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-primary">AI Solutions</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-primary">Website Development</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Contact</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>123 Business Street</li>
+                        <li>City, State 12345</li>
+                        <li>Phone: (123) 456-7890</li>
+                        <li>Email: info@company.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-300">
+                <p>&copy; 2024 Your Company. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.querySelector('.md\\:flex');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Portfolio filtering
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterButtons.forEach(btn => btn.classList.remove('bg-primary', 'text-secondary'));
+                // Add active class to clicked button
+                button.classList.add('bg-primary', 'text-secondary');
+
+                const filter = button.getAttribute('data-filter');
+
+                portfolioItems.forEach(item => {
+                    if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

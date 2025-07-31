@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Marketing Agency</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#FFD700',
+                        secondary: '#1F1F1F',
+                        accent: '#2A2A2A'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-secondary text-gray-100">
+    <!-- Navigation -->
+    <nav class="bg-accent py-4 fixed w-full z-50">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <a href="/" class="flex items-center">
+                <img src="LOGO.jpg" alt="Company Logo" class="h-12">
+            </a>
+            <div class="hidden md:flex space-x-8">
+                <a href="/" class="hover:text-primary transition">Home</a>
+                <a href="services.html" class="hover:text-primary transition">Services</a>
+                <a href="portfolio.html" class="hover:text-primary transition">Portfolio</a>
+                <a href="about.html" class="hover:text-primary transition">About</a>
+                <a href="contact.html" class="hover:text-primary transition">Contact</a>
+            </div>
+            <button class="md:hidden" id="mobile-menu-button">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- About Header -->
+    <section class="pt-32 pb-20 bg-gradient-to-b from-accent to-secondary">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-5xl font-bold mb-6">About Us</h1>
+            <p class="text-xl text-gray-300 max-w-3xl mx-auto">We are a team of digital innovators passionate about helping businesses grow and succeed in the digital age.</p>
+        </div>
+    </section>
+
+    <!-- Our Story -->
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold mb-6">Our Story</h2>
+                    <p class="text-gray-300 mb-6">Founded in 2014, we started with a vision to help businesses navigate the complex digital landscape. Today, we've grown into a full-service digital marketing agency with a track record of delivering exceptional results for our clients.</p>
+                    <p class="text-gray-300 mb-6">Our approach combines cutting-edge technology with creative strategies to deliver solutions that drive real business growth. We believe in building long-term partnerships with our clients and becoming an integral part of their success story.</p>
+                    <div class="grid grid-cols-2 gap-6 mt-8">
+                        <div class="text-center">
+                            <div class="text-primary text-4xl font-bold mb-2">500+</div>
+                            <p class="text-gray-300">Projects Completed</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-primary text-4xl font-bold mb-2">200+</div>
+                            <p class="text-gray-300">Happy Clients</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="1.jpg" alt="Our Story" class="rounded-lg shadow-xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-20 bg-accent">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-16">Why We're Different</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center p-6">
+                    <div class="text-primary text-4xl mb-4">
+                        <svg class="w-16 h-16 mx-auto" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Expert Team</h3>
+                    <p class="text-gray-300">Our team consists of industry experts with years of experience in digital marketing and technology.</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="text-primary text-4xl mb-4">
+                        <svg class="w-16 h-16 mx-auto" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Data-Driven Approach</h3>
+                    <p class="text-gray-300">We make decisions based on data and analytics to ensure the best results for our clients.</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="text-primary text-4xl mb-4">
+                        <svg class="w-16 h-16 mx-auto" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Innovative Solutions</h3>
+                    <p class="text-gray-300">We stay ahead of industry trends to provide cutting-edge solutions for our clients.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Values -->
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-16">Our Values</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-accent p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-4 text-primary">Innovation</h3>
+                    <p class="text-gray-300">We constantly push boundaries and embrace new technologies to deliver cutting-edge solutions.</p>
+                </div>
+                <div class="bg-accent p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-4 text-primary">Integrity</h3>
+                    <p class="text-gray-300">We maintain the highest standards of honesty and transparency in all our dealings.</p>
+                </div>
+                <div class="bg-accent p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-4 text-primary">Excellence</h3>
+                    <p class="text-gray-300">We strive for excellence in everything we do, ensuring the best results for our clients.</p>
+                </div>
+                <div class="bg-accent p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-4 text-primary">Collaboration</h3>
+                    <p class="text-gray-300">We believe in working together to achieve common goals and create lasting partnerships.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Location -->
+    <section class="py-20 bg-accent">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold mb-6">Our Location</h2>
+                    <p class="text-gray-300 mb-6">Located in the heart of the city, our office is easily accessible and equipped with state-of-the-art facilities to serve our clients better.</p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <svg class="w-6 h-6 text-primary mr-4 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                            <div>
+                                <h3 class="font-semibold mb-2">Address</h3>
+                                <p class="text-gray-300">123 Business Street<br>City, State 12345<br>United States</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <svg class="w-6 h-6 text-primary mr-4 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                            </svg>
+                            <div>
+                                <h3 class="font-semibold mb-2">Contact</h3>
+                                <p class="text-gray-300">Phone: (123) 456-7890<br>Email: info@company.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="h-96 rounded-lg overflow-hidden">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.30596073366!2d-74.25987368715491!3d40.69714941932609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1644286590170!5m2!1sen!2s"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <img src="LOGO.jpg" alt="Company Logo" class="h-12 mb-4">
+                    <p class="text-gray-300">Your trusted partner for digital growth and innovation.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/" class="text-gray-300 hover:text-primary">Home</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-primary">Services</a></li>
+                        <li><a href="portfolio.html" class="text-gray-300 hover:text-primary">Portfolio</a></li>
+                        <li><a href="about.html" class="text-gray-300 hover:text-primary">About</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-primary">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="services.html" class="text-gray-300 hover:text-primary">SEO Optimization</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-primary">Digital Marketing</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-primary">Business Automation</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-primary">AI Solutions</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-primary">Website Development</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Contact</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>123 Business Street</li>
+                        <li>City, State 12345</li>
+                        <li>Phone: (123) 456-7890</li>
+                        <li>Email: info@company.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-300">
+                <p>&copy; 2024 Your Company. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.querySelector('.md\\:flex');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

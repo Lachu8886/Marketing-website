@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Marketing Agency</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#FFD700',
+                        secondary: '#1F1F1F',
+                        accent: '#2A2A2A'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-secondary text-gray-100">
+    <!-- Navigation -->
+    <nav class="bg-accent py-4 fixed w-full z-50">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <a href="/" class="flex items-center">
+                <img src="LOGO.jpg" alt="Company Logo" class="h-12">
+            </a>
+            <div class="hidden md:flex space-x-8">
+                <a href="/" class="hover:text-primary transition">Home</a>
+                <a href="services.html" class="hover:text-primary transition">Services</a>
+                <a href="portfolio.html" class="hover:text-primary transition">Portfolio</a>
+                <a href="about.html" class="hover:text-primary transition">About</a>
+                <a href="contact.html" class="hover:text-primary transition">Contact</a>
+            </div>
+            <button class="md:hidden" id="mobile-menu-button">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Services Header -->
+    <section class="pt-32 pb-20 bg-gradient-to-b from-accent to-secondary">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-5xl font-bold mb-6">Our Services</h1>
+            <p class="text-xl text-gray-300 max-w-3xl mx-auto">Comprehensive digital solutions tailored to elevate your business to new heights.</p>
+        </div>
+    </section>
+
+    <!-- Detailed Services -->
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+            <!-- SEO Service -->
+            <div class="mb-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="2.jpg" alt="SEO Service" class="rounded-lg shadow-xl w-full">
+                </div>
+                <div>
+                    <h2 class="text-3xl font-bold mb-6">SEO Optimization</h2>
+                    <p class="text-gray-300 mb-6">Our comprehensive SEO services are designed to improve your website's visibility and drive organic traffic. We employ cutting-edge techniques and stay updated with the latest search engine algorithms.</p>
+                    <ul class="space-y-4">
+                        <li class="flex items-center">
+                            <span class="text-primary mr-2">✓</span>
+                            Keyword Research and Analysis
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-primary mr-2">✓</span>
+                            On-Page SEO Optimization
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-primary mr-2">✓</span>
+                            Technical SEO Improvements
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-primary mr-2">✓</span>
+                            Content Strategy and Optimization
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Digital Marketing -->
+            <div class="mb-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="order-2 md:order-1">
+                    <h2 class="text-3xl font-bold mb-6">Digital Marketing</h2>
+                    <p class="text-gray-300 mb-6">Transform your online presence with our strategic digital marketing solutions. We create customized campaigns that drive engagement and conversions.</p>
+                    <ul class="space-y-4">
+                        <li class="flex items-center">
+                            <span class="text-primary mr-2">✓</span>
+                            Social Media Marketing
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-primary mr-2">✓</span>
+                            Email Marketing Campaigns
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-primary mr-2">✓</span>
+                            PPC Advertising
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-primary mr-2">✓</span>
+                            Content Marketing
+                        </li>
+                    </ul>
+                </div>
+                <div class="order-1 md:order-2">
+                    <img src="3.jpg" alt="Digital Marketing" class="rounded-lg shadow-xl w-full">
+                </div>
+            </div>
+
+            <!-- Business Automation -->
+            <div class="mb-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="4.jpg" alt="Business Automation" class="rounded-lg shadow-xl w-full">
+                </div>
+                <div>
+                    <h2 class="text-3xl font-bold mb-6">Business Automation</h2>
+                    <p class="text-gray-300 mb-6">Streamline your operations and increase efficiency with our intelligent automation solutions. We help you identify and implement the right automation tools for your business.</p>
+                    <ul class="space-y-4">
+                        <li class="flex items-center">
+                            <span class="text-primary mr-2">✓</span>
+                            Workflow Automation
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-primary mr-2">✓</span>
+                            Process Optimization
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-primary mr-2">✓</span>
+                            Integration Solutions
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-primary mr-2">✓</span>
+                            Custom Automation Tools
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- AI Solutions -->
+            <div class="mb-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="order-2 md:order-1">
+                    <h2 class="text-3xl font-bold mb-6">AI Solutions</h2>
+                    <p class="text-gray-300 mb-6">Harness the power of artificial intelligence to transform your business processes and decision-making. Our AI solutions are designed to give you a competitive edge.</p>
+                    <ul class="space-y-4">
+                        <li class="flex items-center">
+                            <span class="text-primary mr-2">✓</span>
+                            Machine Learning Implementation
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-primary mr-2">✓</span>
+                            Predictive Analytics
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-primary mr-2">✓</span>
+                            Natural Language Processing
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-primary mr-2">✓</span>
+                            AI-Powered Automation
+                        </li>
+                    </ul>
+                </div>
+                <div class="order-1 md:order-2">
+                    <img src="5.jpg" alt="AI Solutions" class="rounded-lg shadow-xl w-full">
+                </div>
+            </div>
+
+            <!-- Website Development -->
+            <div class="mb-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="6.jpg" alt="Website Development" class="rounded-lg shadow-xl w-full">
+                </div>
+                <div>
+                    <h2 class="text-3xl font-bold mb-6">Website Development</h2>
+                    <p class="text-gray-300 mb-6">Create a powerful online presence with our custom website development services. We build responsive, user-friendly websites that drive results.</p>
+                    <ul class="space-y-4">
+                        <li class="flex items-center">
+                            <span class="text-primary mr-2">✓</span>
+                            Custom Website Design
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-primary mr-2">✓</span>
+                            E-commerce Solutions
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-primary mr-2">✓</span>
+                            Mobile-First Development
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-primary mr-2">✓</span>
+                            Website Maintenance
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Content Marketing -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="order-2 md:order-1">
+                    <h2 class="text-3xl font-bold mb-6">Content Marketing</h2>
+                    <p class="text-gray-300 mb-6">Engage your audience with compelling content that drives action. Our content marketing strategies are designed to build brand authority and generate leads.</p>
+                    <ul class="space-y-4">
+                        <li class="flex items-center">
+                            <span class="text-primary mr-2">✓</span>
+                            Content Strategy Development
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-primary mr-2">✓</span>
+                            Blog Writing and Management
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-primary mr-2">✓</span>
+                            Social Media Content
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-primary mr-2">✓</span>
+                            Video Content Production
+                        </li>
+                    </ul>
+                </div>
+                <div class="order-1 md:order-2">
+                    <img src="7.jpg" alt="Content Marketing" class="rounded-lg shadow-xl w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-accent">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-8">Ready to Transform Your Business?</h2>
+            <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">Let's discuss how our services can help you achieve your business goals.</p>
+            <a href="contact.html" class="bg-primary text-secondary px-8 py-3 rounded-full font-semibold hover:bg-yellow-400 transition inline-block">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <img src="LOGO.jpg" alt="Company Logo" class="h-12 mb-4">
+                    <p class="text-gray-300">Your trusted partner for digital growth and innovation.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/" class="text-gray-300 hover:text-primary">Home</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-primary">Services</a></li>
+                        <li><a href="portfolio.html" class="text-gray-300 hover:text-primary">Portfolio</a></li>
+                        <li><a href="about.html" class="text-gray-300 hover:text-primary">About</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-primary">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-primary">SEO Optimization</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-primary">Digital Marketing</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-primary">Business Automation</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-primary">AI Solutions</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-primary">Website Development</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Contact</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>123 Business Street</li>
+                        <li>City, State 12345</li>
+                        <li>Phone: (123) 456-7890</li>
+                        <li>Email: info@company.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-300">
+                <p>&copy; 2024 Your Company. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.querySelector('.md\\:flex');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
